@@ -1,0 +1,7 @@
+-- 4. Obter a contagem de todos os Pedidos feitos durante 1997
+
+SELECT 
+COUNT(DISTINCT(ORDER_ID))
+FROM ORDERS
+WHERE
+ORDER_DATE BETWEEN '1997-01-01' AND '1997-12-31'
